@@ -1,0 +1,14 @@
+{<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<config>
+    <browserType>Chrome</browserType>
+    <URLS>
+        <URL1>
+            https://dgotlieb.github.io/Navigation/Navigation.html
+        </URL1>
+        <URL2>
+            https://translate.google.com
+        </URL2>
+        <URL3>https://www.walla.co.il</URL3>
+    </URLS>
+
+</config>}
