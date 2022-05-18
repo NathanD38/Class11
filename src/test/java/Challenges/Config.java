@@ -1,9 +1,20 @@
 package Challenges;
 
-public class Config {
-    private String url;
+import com.google.gson.JsonElement;
 
-    public String getURL() {
-        return url;
+public class Config {
+    private JsonElement url;
+    private JsonElement browser;
+
+    public Config() {}
+
+    public Config(JsonElement url) {
+        super();
+        this.url = url;
+    }
+
+
+    public String getUrl() {
+        return url.getAsString();
     }
 }

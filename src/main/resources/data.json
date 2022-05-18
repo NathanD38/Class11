@@ -1,4 +1,11 @@
 {
-  "browser" : ["Chrome", "Firefox"],
-  "url" : [ "https://www.stackoverflow.com", "https://www.w3schools.com", "https://www.geeksforgeeks.org" ]
+  "browser":[
+    "Chrome",
+    "Firefox"
+  ],
+  "url":[
+    "https://www.stackoverflow.com",
+    "https://www.w3schools.com",
+    "https://www.geeksforgeeks.org"
+  ]
 }

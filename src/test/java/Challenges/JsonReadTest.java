@@ -56,15 +56,19 @@ public class JsonReadTest {
         driver.get(getURLFromJson());
         driver.navigate().to(link2.getAsString());
         driver.navigate().to(link3.getAsString());
-        Config config = gson.fromJson(br, Config.class);
-        driver.get(config.getURL()); //not working - NullPointerException
+    }
+
+    @Test
+    public void test02_challenge06_readFromConfig() {
+        Config config = new Config(obj.getAsJsonArray("url").get(1));
+        driver.get(config.getUrl());
+
     }
 
     @AfterClass
     public static void tearDown() {
 //        driver.quit();
     }
-
 
     protected String getURLFromJson() {
         JsonElement link1 = obj.getAsJsonArray("url").get(0);
